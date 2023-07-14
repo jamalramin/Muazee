@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    font-family: poppins;
+}
+
+.wrapper header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 80px;
+    width: 100%;
+    background-color: grey;
+}
+
+.wrapper header .logo img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    mix-blend-mode: none;
+}
+
+.wrapper header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header .header-link ul li #plan{
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: yellow;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+header .header-link ul li #plan:hover{
+    background-color: rgb(192, 192, 36);
+}
+
+.wrapper header ul li a{
+    list-style: none;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size:15px;
+}
+
+.wrapper .slide-show{
+    overflow-x: scroll;
+    display: flex;
+    position: relative;
+    bottom: 80px;
+}
+
+.wrapper .slide-show .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 50%;
+    bottom: 30px;
+    width: 100%;
+}
+
+/* .wrapper .slide-show .btns div{
+    padding: 8px 1px;
+} */
+
+.wrapper .slide-show .btns li{
+    background-color: gray;
+    height: 3px;
+    width: 30px;
+    margin:0 3px ;
+    list-style: none;
+}
+
+.wrapper .slide-show .btns a li:focus{
+    background-color: white;
+}
+
+.wrapper .slide-show::-webkit-scrollbar{
+    display: none;
+}
+
+.wrapper .slide-show img{
+    width: 100vw;
+    height: 100%;
+}
+
+.wrapper .service-section {
+    z-index: 100;
+    padding: 50px 80px;
+    height: 700px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .service-section .div-links{
+    width: 25%;
+    position: relative;
+    padding: 30px 30px 50px;
+    background-color:#fff ;
+}
+
+.wrapper .service-section .div-links h2{
+    color: rgb(4, 80, 245);
+}
+
+.wrapper .service-section .div-links h3{
+    margin-top: 19px;
+    background-color:rgb(4, 80, 245);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    text-transform: capitalize;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 15px;
+    font-size: 16px;
+}
+
+.wrapper .service-section .div-links ul{
+    margin: 25px 0;
+    list-style: none;
+}
+
+.wrapper .service-section .div-links ul li a{
+    margin: 15px 0;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .service-section .div-links ul li a ion-icon{
+    margin-right: 25px;
+    font-size: 20px;
+    color: rgb(4, 80, 245);
+}
+
+.wrapper .service-section .content{
+    background-color: #fff;
+    width: 70%;
+    height: 80%;
+    padding:50px 60px;
+
+}
+
+.wrapper .service-section .content .feilds{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wrapper .service-section .content .feilds div{
+    padding: 20px 30px;
+    border: 1px solid gray;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper .service-section .content .feilds div h2{
+    margin: 10px 0; 
+}
+
+.wrapper .service-section .content .feilds div p{
+    text-align: justify;
+}
+
+.wrapper .service-section .content .feilds div ion-icon{
+    font-size: 35px;
+    color: rgb(4, 80, 245);
+}
+
+/* this part belongs to the about section  */
+
+.wrapper .about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+    padding: 70px 80px;
+}
+
+.wrapper .about-section .about-images{
+    position: relative;
+    width: 43%;
+    height: 85%;
+}
+
+.wrapper .about-section .about-images img:first-child{
+    height: 280px;
+    width: 400px;
+    border: none;
+    border-radius:5px ;
+}
+
+.wrapper .about-section .about-images img:last-child{
+    height: 230px;
+    width: 350px;
+    border-radius:8px ;
+    position: absolute;
+    right: 10px;
+    bottom:40px;
+    border: 7px solid white;
+}
+
+.wrapper .about-section .about-txt {
+    width: 70%;
+    padding-left: 30px;
+
+}
+
+.wrapper .about-section .about-txt p{
+    margin: 15px 0;
+}
+
+.wrapper .about-section .about-txt .about-services{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper .about-section .about-txt .about-services div{
+    width: 290px;
+    margin: 0px 20px;
+}
+
+.wrapper .about-section .about-txt .about-services div section{
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .about-section .about-txt .about-services div section ion-icon{
+    font-size: 50px;
+    margin:4px 20px 4px 0;
+    color:rgb(4, 80, 245) ;
+}
+
+.wrapper #muazee{
+    margin: 50px 0 0 50px;
+    font-weight: bold;
+}
+
+.wrapper .company-char {
+    height: 500px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 40px;
+}
+
+.wrapper .company-char .char-txt{
+    width: 60%;
+    background-color: #eee;
+    display: flex;
+    padding: 50px 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .company-char .char-txt .char-link{
+    padding: 0;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.wrapper .company-char .char-txt .char-info{
+    padding-left:40px;
+}
+
+.wrapper .company-char .char-txt .char-info h2{
+    color: rgb(4, 80, 245);
+}
+
+.wrapper .company-char .char-txt .char-info p{
+    text-align: justify;
+    padding:10px 30px 10px 0 ;
+}
+
+.wrapper .company-char .char-txt .char-link section ion-icon{
+    color: rgb(4, 80, 245);
+    font-size: 30px;
+}
+
+.wrapper .company-char .char-txt .char-link section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    transform: scale(0.9);
+    padding:15px 60px;
+    transition-duration: 0.5s;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wrapper .company-char .char-txt .char-link section:hover
+{
+    background-color: #cccccc;
+}
+
+.wrapper .company-char .char-img img{
+    height: 300px;
+    width: 450px;
+}
+
+/* this part belongs to the footer section  */
+
+.wrapper footer{
+    /* height: 500px; */
+    background-color: rgb(100, 100, 100);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 290px 90px 80px;
+}
+
+.wrapper footer div{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.wrapper footer div img{
+    margin: 25px 0;
+    mix-blend-mode: multiply;
+}
+
+.wrapper footer div .social-links{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0;
+}
+
+.wrapper footer div .social-links ion-icon{
+    font-size: 25px;
+    margin: 15px 10px;
+}
+
+.wrapper footer div a{
+    margin: 10px 0;
+    color: #eee;
+    text-decoration: none;
+    font-weight: 10;
+}
+
+.wrapper footer div h2{
+    margin-bottom:23px;
+}
+
+.wrapper footer div .subscribe-part{
+    display: flex;
+    flex-direction:row;
+}
+
+.wrapper footer div .subscribe-part input{
+    padding: 15px 20px;
+    border: 2px solid white;
+    color: #fff;
+    border-radius: 3px;
+    margin-right: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.wrapper footer div .subscribe-part input:first-child{
+    width: 250px;
+}
+
+.wrapper footer div .subscribe-part input:first-child::placeholder{
+    color: darkgray;
+}
+
+/* this belongs to the plan-project section  */
+
+.wrapper #freind{
+    margin-top:80px ;
+}
+
+.wrapper .afg-flag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .afg-flag div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 60px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    margin: 30px 0;
+}
+
+.wrapper .afg-flag div img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.wrapper .plan{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:90px 80px ;
+    height: 600px;
+    overflow: hidden;
+}
+
+.wrapper .plan img{
+    height: 500px;
+    width: 550px;
+}
+
+.wrapper .plan .message{
+    padding: 13px 50px;
+    background-color: #f2f2f2;
+}
+
+.wrapper .plan .message div input[type = submit]{
+    padding: 15px 30px;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(4, 80, 245);
+    margin: 15px 0;
+}
+
+.wrapper .plan .message div textarea{
+    padding: 15px 20px;
+    outline: none;
+    border: 2px solid transparent;
+    margin: 10px 0 20px 0;
+    font-size: 15px;
+}
+
+.wrapper .plan .message div textarea:focus{
+    border: 2px solid black;
+}
+
+.wrapper .plan .message p{
+    margin: 15px 0;
+}
+
+.wrapper .plan .message .plan-input{
+    display: flex;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.wrapper .plan .message .plan-input div{
+    position: relative;
+    height: 50px;
+    width: 310px;
+    margin:5px 20px 10px 0;
+    display:flex;
+    align-items:center;
+    padding: 0 50px;
+}
+
+.wrapper .plan .message .plan-input input:focus{
+    border: 2px solid black;
+}
+
+.wrapper .plan .message .plan-input div ion-icon{
+    position:absolute;
+    right:0px;
+    padding: 0 20px;
+}
+
+.wrapper .plan .message .plan-input div input{
+    outline: none;
+    height:100%;
+    position:absolute;
+    left:0px;
+    width:100%;
+    border-radius: 3px;
+    border:2px solid transparent;
+    padding: 0 10px;
+}
